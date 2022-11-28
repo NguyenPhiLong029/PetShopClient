@@ -1,0 +1,5 @@
+FROM hungnguyen520/shinningapp:latest
+
+RUN yarn global add firebase-tools
+RUN export GOOGLE_APPLICATION_CREDENTIALS=firebase-service-account.json
+RUN firebase deploy --only hosting

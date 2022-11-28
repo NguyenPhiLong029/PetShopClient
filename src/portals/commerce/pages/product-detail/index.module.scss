@@ -1,0 +1,41 @@
+.container {
+  max-width: 1470px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.price {
+  font-weight: 'bold';
+  margin: 0;
+  color: #fb5231;
+  font-size: 30px;
+}
+.btn_cart {
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  background-color: #fb5231;
+  &:hover {
+    background-color: #e93713;
+  }
+  &:focus {
+    background-color: #e93713;
+  }
+}
+
+.slide_item {
+  margin-bottom: 12px;
+}
+
+.slide_selected img {
+  border: 2px solid #e93713;
+}
+
+.slide_item:last-child {
+  margin-bottom: 0;
+}
+
+.image_item:active {
+  border: 1px solid #fb5231;
+}

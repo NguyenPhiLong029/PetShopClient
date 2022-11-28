@@ -1,0 +1,12 @@
+{
+  "Console.log": {
+    "prefix": "cl",
+    "body": ["console.log('9999 $1', );"],
+    "description": "Log output to console"
+  },
+  "Try catch": {
+    "prefix": "tryc",
+    "body": ["try { \n$1 } catch(err) {}"],
+    "description": "Write map-get command"
+  }
+}

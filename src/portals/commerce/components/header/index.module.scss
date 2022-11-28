@@ -1,0 +1,42 @@
+textarea:focus,
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.color {
+  text-align: center;
+}
+
+.display {
+  align-items: center;
+  justify-content: center;
+}
+
+.text_count {
+  padding: 0 10px;
+  border: 1px solid transparent;
+  background-color: #fb5231;
+  color: #fff;
+}
+
+.button:focus,
+.button:active,
+.button:hover {
+  text-decoration: none;
+  background: #fb5231;
+  color: #fff;
+  border-color: #fb5231;
+}
+
+.bg_count {
+  border-radius: 30px;
+  border: transparent;
+  background-color: #fb5231;
+  color: #fff;
+  padding: 4px 10px;
+}
+
+.ant-card-body {
+  padding: 15px;
+}

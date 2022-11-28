@@ -1,0 +1,23 @@
+.auth-layout__content {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-page {
+  background-color: white;
+  padding: 50px;
+  width: 50vw;
+
+  & > h2.ant-typography {
+    margin-bottom: 40px;
+  }
+}
+
+.auth-page__actions {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}

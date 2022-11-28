@@ -1,0 +1,39 @@
+.box_count {
+  border-radius: 30px;
+  max-width: 95px;
+  max-height: 25px;
+  background-color: #fb5231;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button:focus,
+.button:active,
+.button:hover {
+  text-decoration: none;
+  background: #fb5231;
+  color: #fff;
+  border-color: #fb5231;
+}
+
+.bg_count {
+  border-radius: 30px;
+  border: transparent;
+  background-color: #fb5231;
+  color: #fff;
+}
+
+.text_count {
+  width: 30px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

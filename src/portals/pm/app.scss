@@ -1,0 +1,9 @@
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > h1 {
+    margin-bottom: 0 !important;
+  }
+}

@@ -1,0 +1,28 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+variables:
+  # Use TLS https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#tls-enabled
+
+before_script:
+  - docker login -u hungnguyen520 -p 06083556-7d3f-42a9-a491-ccfab2f021ae
+
+build:
+  stage: build
+  script:
+    - docker build --tag hungnguyen520/shinningapp --file Dockerfile .
+    - docker push hungnguyen520/shinningapp:latest
+
+deploy:
+  stage: deploy
+  script:
+    - docker pull hungnguyen520/shinningapp:latest
+    - docker run -p 2900:4400 --name shinningapp_container hungnguyen520/shinningapp:latest
+    # - docker exec --workdir /app shinningapp_container firebase deploy
+    # - docker stop shinningapp_container
+    # - docker rm shinningapp_container
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+      when: manual

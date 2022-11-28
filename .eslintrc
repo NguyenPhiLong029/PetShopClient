@@ -1,0 +1,39 @@
+{
+  "env": {
+    "commonjs": true,
+    "node": true,
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "globals": {},
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "ignorePatterns": [
+    "node_modules/",
+    "**/*.js"
+  ],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": 0
+  },
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  }
+}
